@@ -1,6 +1,165 @@
 @import 'vars';
 @import 'libs';
 @import 'fonts';
+@import 'global';
+
+.header {
+	position: relative;
+	height: 100vh;
+}
+
+.header__slider {
+	&-item {
+		height: 100vh;
+		background-image: url(../img/header-bg.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+}
+
+.slider-item__info {
+	position: absolute;
+	right: 8rem;
+	bottom: 11.6rem;
+	text-align: right;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.slider-item__info-suptitle {
+	margin-bottom: 0.5rem;
+}
+
+.slider-item__info-title {
+	font-size: 8rem;
+	font-weight: 800;
+	line-height: 8.6rem;
+	margin-bottom: 4.8rem;
+}
+.slider-item__info-suptext {
+	margin-bottom: 0.8rem;
+}
+
+.slider-item__info-text {
+	font-size: 4rem;
+	font-weight: 800;
+	line-height: 4.8rem;
+	margin-bottom: 2rem;
+}
+
+.slider-arrows {
+	position: absolute;
+	top: 4rem;
+	right: 8rem;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.slider-arrows__left {
+	right: 12.5rem;
+}
+
+.slider-dots {
+	position: absolute;
+	right: 5rem;
+	bottom: 3.6rem;
+	max-width: 92rem;
+	width: 100%;
+	color: #fff;
+	.slick-current {
+		.dots-box {
+			border-top: 0.4rem solid $green;
+		}
+	}
+}
+
+.dots-box {
+	width: 20rem;
+	height: 2.8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: .4rem solid #fff;
+	padding-top: 0.6rem;
+	&__number {
+		font-size: 2.4rem;
+		font-weight: 800;
+		line-height: 3.4rem;
+	}
+	&__name {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 1.9rem;
+	}
+}
+
+.header__aside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	border-right: .1rem solid rgba(#fff, .25);
+	height: 100vh;
+	text-align: center;
+	color: #fff;
+}
+.header__title {
+	max-width: 46.7rem;
+	font-size: 20rem;
+	font-weight: 800;
+	line-height: 15.6rem;
+	color: #fff;
+	text-transform: uppercase;
+	opacity: 0.07;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+
+.menu {
+	a {
+		color: #fff;
+		span {
+			display: block;
+			font-size: 1.2rem;
+			font-weight: 500;
+			line-height: 1.4rem;
+			letter-spacing: .3rem;
+			padding-top: 0.6rem;
+			margin-bottom: 3.7rem;
+		}
+	}
+}
+
+.header__date {
+	font-size: 7.2rem;
+	font-weight: 800;
+	line-height: 6.4rem;
+	text-transform: uppercase;
+	span {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 1.9rem;
+		letter-spacing: .14rem;
+		margin-bottom: 3rem;
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
